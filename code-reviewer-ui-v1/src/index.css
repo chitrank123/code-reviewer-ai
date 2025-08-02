@@ -1,0 +1,38 @@
+/* Use the modern @tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+/* Import the Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Custom scrollbar styles */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #1e293b; /* slate-800 */
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #475569; /* slate-600 */
+    border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #64748b; /* slate-500 */
+}
+
+/* Override Monaco Editor's default background */
+.editor-container .monaco-editor .monaco-editor-background,
+.editor-container .monaco-editor .margin {
+    background-color: #1e293b !important; /* slate-800 */
+}
+
+/* ADD THIS CLASS: Ensures the prose container takes up available space */
+.prose-container {
+    height: 100%;
+}
